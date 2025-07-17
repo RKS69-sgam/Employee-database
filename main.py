@@ -18,7 +18,7 @@ credentials = ServiceAccountCredentials.from_json_keyfile_dict(credentials_dict,
 client = gspread.authorize(credentials)
 
 # === Google Sheet Open
-sheet_id = "https://docs.google.com/spreadsheets/d/1UUoTgK7HUGzPwoUZ8ex8hhmmbVD_mNPtpsfiyXgmOsA/edit?usp=drivesdk"  # Google Sheet ka ID
+sheet_id = "1UUoTgK7HUGzPwoUZ8ex8hhmmbVD_mNPtpsfiyXgmOsA"  # Google Sheet ka ID
 sheet = client.open_by_key(sheet_id)
 worksheet = sheet.sheet1  # या specific worksheet नाम: sheet.worksheet("Sheet1")
 
